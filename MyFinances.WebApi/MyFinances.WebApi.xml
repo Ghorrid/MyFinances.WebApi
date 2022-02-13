@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyFinances.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:MyFinances.WebApi.Controllers.OperationController.Get">
+            <summary>
+            Get all operations 
+            </summary>
+            <returns>DataResponse - IEnumerable OperationDto </returns>
+        </member>
+		 <member name="M:MyFinances.WebApi.Controllers.OperationController.Get(System.Int32, System.Int32)">
+            <summary>
+             Gets n records of operations from m page
+            </summary>
+			  <param name="records">number od records</param>
+              <param name="page">number of page</param>
+            <returns>DataResponse - IEnumerable OperationDto </returns>
+        </member>
+        <member name="M:MyFinances.WebApi.Controllers.OperationController.Get(System.Int32)">
+            <summary>
+            Get operation by id
+            </summary>
+            <param name="id"> Operation id </param>
+            <returns>DataResponse - OperationDto </returns>
+        </member>
+        <member name="M:MyFinances.WebApi.Controllers.OperationController.Add(MyFinances.WebApi.Models.Dtos.OperationDto)">
+            <summary>
+            Add new Operation
+            </summary>
+            <param name="operation"> OperationDto </param>
+            <returns></returns>
+        </member>
+        <member name="M:MyFinances.WebApi.Controllers.OperationController.Update(MyFinances.WebApi.Models.Dtos.OperationDto)">
+            <summary>
+            Update operation
+            </summary>
+            <param name="operation"> OperationDto </param>
+            <returns></returns>
+        </member>
+        <member name="M:MyFinances.WebApi.Controllers.OperationController.Delete(System.Int32)">
+            <summary>
+            Delete operation
+            </summary>
+            <param name="id">Operation id</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
